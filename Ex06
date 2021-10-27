@@ -1,0 +1,49 @@
+using System;
+using System.Globalization;
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        //string[] vet = Console.ReadLine().Split(' ');
+        //CultureInfo.InvariantCulture
+
+        string[] vet = Console.ReadLine().Split(' ');
+
+        double preco1 = 4.00;
+        double preco2 = 4.50;
+        double preco3 = 5.00;
+        double preco4 = 2.00;
+        double preco5 = 1.50;
+
+        int cod = int.Parse(vet[0], CultureInfo.InvariantCulture);
+        int qte = int.Parse(vet[1], CultureInfo.InvariantCulture);
+
+        if (cod == 1)
+        {
+            Console.WriteLine("Total: R$ " + preco1 * qte, CultureInfo.InvariantCulture);
+        }
+
+        else if (cod == 2)
+        {
+            Console.WriteLine("Total: R$ " + preco2 * qte, CultureInfo.InvariantCulture);
+        }
+
+        else if (cod == 3)
+        {
+            Console.WriteLine("Total: R$ " + preco3 * qte, CultureInfo.InvariantCulture);
+        }
+
+        else if (cod == 4)
+        {
+            Console.WriteLine("Total: R$ " + preco4 * qte, CultureInfo.InvariantCulture);
+        }
+
+        else if (cod == 5)
+        {
+            Console.WriteLine("Total: R$ " + preco5 * qte, CultureInfo.InvariantCulture);
+        }
+
+
+    }
+    }
