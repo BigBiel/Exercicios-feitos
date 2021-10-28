@@ -1,0 +1,36 @@
+using System;
+using System.Globalization;
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        //string[] vet = Console.ReadLine().Split(' ');
+        //CultureInfo.InvariantCulture
+
+        double salario = double.Parse(Console.ReadLine());
+
+
+        if (salario < 2000.01)
+        {
+            Console.WriteLine("Isento");
+        }
+
+        if (salario > 2000.01 && salario < 3000.00)
+        {
+            Console.WriteLine("R$ " + salario * 0.08);
+        }
+        if (salario > 3000.01 && salario < 4500.00)
+        {
+            Console.WriteLine("R$ " + salario * 0.18);
+        }
+        if (salario > 4500.00)
+        {
+            Console.WriteLine("R$ " + salario * 0.28);
+        }
+
+
+
+
+    }
+}
